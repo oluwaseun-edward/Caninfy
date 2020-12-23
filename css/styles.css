@@ -1,10 +1,17 @@
+:root {
+  --main-font: "Catamaran";
+  --second-font: "Oxygen";
+  --main-back-color: #ff4c68;
+  --second-back-color: #ef8172;
+}
+
 body {
-  font-family: "Montserrat";
+  font-family: var(--main-font);
   text-align: center;
 }
 
 h1, h2,h3,h4,h5,h6 {
-  font-family: "Montserrat";
+  font-family: var(--main-font);
   font-weight: bold;
 }
 
@@ -13,7 +20,7 @@ p {
 }
 
 .big-heading{
-  font-family: "Montserrat";
+  font-family: var(--main-font));
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
@@ -27,7 +34,7 @@ p {
 
 /* Sections */
 .colored-section{
-  background-color: #ff4c68;
+  background-color: var(--main-back-color);
   color: white;
 }
 
@@ -42,7 +49,7 @@ p {
 }
 
 .navbar-brand {
-  font-family: "Ubuntu";
+  font-family: var(--second-font);
   font-weight: bold;
   font-size: 2.5rem;
 }
@@ -55,7 +62,8 @@ p {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat Light";
+  font-family: var(--main-font);
+  font-weight: 300;
 }
 
 /* Download buttons */
@@ -91,13 +99,13 @@ p {
   font-size:1.5rem;
 }
 .icon {
-  color: #ef8172;
+  color: var(--second-back-color);
   margin-bottom: 5%;
 }
 
 /* create hover on the icon */
 .icon:hover {
-  color: #ff4c68;
+  color: var(--main-back-color);
 }
 
 .feature-box {
@@ -107,7 +115,7 @@ p {
 
 /* Testimonials section */
 #testimonials {
-  background-color: #ef8172;
+  background-color: var(--second-back-color);
 }
 
 .testimonial-text{
@@ -122,7 +130,7 @@ p {
 }
 
 #press {
-  background-color: #ef8172;
+  background-color: var(--second-back-color);
   padding-bottom: 3%;
 }
 
